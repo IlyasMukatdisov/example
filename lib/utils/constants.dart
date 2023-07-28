@@ -8,6 +8,7 @@ const kPagePadding = 30.0;
 
 const kPrimaryColor = Color(0xFFF9AD2B);
 const kTextColor = Color(0xFF787878);
+const kDarkGrayColor = Color(0xFF4B4B4B);
 const kSliderDisabledColor = Color(0xFFD2D2D2);
 
 const onBoardingScreens = [

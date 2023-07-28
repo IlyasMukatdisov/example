@@ -1,3 +1,4 @@
+import 'package:example/pages/auth/sign_in_page.dart';
 import 'package:example/pages/landing/landing_page.dart';
 import 'package:example/utils/constants.dart';
 import 'package:example/utils/router.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         fontFamily: GoogleFonts.plusJakartaSans().fontFamily,
         useMaterial3: true,
       ),
-      home: const LandingPage(),
+      home: const SignInPage(),
       onGenerateRoute: router,
     );
   }
