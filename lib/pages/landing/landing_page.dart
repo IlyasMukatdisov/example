@@ -1,4 +1,4 @@
-import 'package:example/pages/sign_in/sign_in_screen.dart';
+import 'package:example/pages/auth/sign_in_page.dart';
 import 'package:example/utils/constants.dart';
 import 'package:example/utils/strings.dart';
 import 'package:flutter/material.dart';
@@ -69,7 +69,10 @@ class _LandingPageState extends State<LandingPage> {
                 _currentPage < onBoardingScreens.length - 1
                     ? TextButton(
                         onPressed: () {
-                          _controller.jumpTo(onBoardingScreens.length - 1);
+                          _controller.animateToPage(
+                              onBoardingScreens.length - 1,
+                              duration: const Duration(milliseconds: 500),
+                              curve: Curves.ease);
                         },
                         child: const Padding(
                           padding:
@@ -95,7 +98,10 @@ class _LandingPageState extends State<LandingPage> {
                         );
                         return;
                       }
-                      Navigator.of(context).pushNamed(SignInScreen.routeName);
+                      Navigator.of(context).pushNamedAndRemoveUntil(
+                        SignInPage.routeName,
+                        (route) => false,
+                      );
                     },
                     child: Padding(
                       padding: const EdgeInsets.symmetric(

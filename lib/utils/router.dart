@@ -1,5 +1,5 @@
 import 'package:example/pages/landing/landing_page.dart';
-import 'package:example/pages/sign_in/sign_in_screen.dart';
+import 'package:example/pages/auth/sign_in_page.dart';
 import 'package:example/utils/pages/error_page.dart';
 import 'package:flutter/material.dart';
 
@@ -9,9 +9,9 @@ Route router(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (_) => const LandingPage(),
       );
-    case SignInScreen.routeName:
+    case SignInPage.routeName:
       return MaterialPageRoute(
-        builder: (_) => const SignInScreen(),
+        builder: (_) => const SignInPage(),
       );
     default:
       return MaterialPageRoute(
