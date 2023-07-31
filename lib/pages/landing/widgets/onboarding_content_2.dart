@@ -28,7 +28,7 @@ class OnBoardingContent2 extends StatelessWidget {
           Strings.landingText,
           textAlign: TextAlign.center,
           style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: kTextColor,
+                color: kSystem60Color,
                 fontSize: 16,
               ),
         ),
