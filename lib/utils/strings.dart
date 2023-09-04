@@ -22,4 +22,5 @@ class Strings {
   static const and = ' and ';
   static const privacyPolicy = 'Privacy Policy';
   static const fullName = 'Full name';
+  static const createAccount = 'Create account';
 }

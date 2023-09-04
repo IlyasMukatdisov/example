@@ -117,9 +117,81 @@ class SignUpPage extends StatelessWidget {
                                 right: 16,
                               ),
                               child: SvgPicture.asset(
-                                'assets/icons/email.svg',
+                                'assets/icons/education.svg',
                                 height: 24,
                                 width: 24,
+                              ),
+                            ),
+                            suffixIcon: Padding(
+                              padding: const EdgeInsets.only(
+                                left: 0,
+                                right: 30,
+                              ),
+                              child: SvgPicture.asset(
+                                'assets/icons/expand.svg',
+                                height: 10,
+                                width: 10,
+                              ),
+                            ),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            labelText: 'Last education',
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 24,
+                        ),
+                        TextFormField(
+                          decoration: InputDecoration(
+                            contentPadding: const EdgeInsets.all(24),
+                            prefixIconConstraints:
+                                const BoxConstraints(minWidth: 0, minHeight: 0),
+                            prefixIcon: Padding(
+                              padding: const EdgeInsets.only(
+                                left: 24,
+                                right: 16,
+                              ),
+                              child: SvgPicture.asset(
+                                'assets/icons/calendar.svg',
+                                height: 24,
+                                width: 24,
+                              ),
+                            ),
+                            suffixIcon: Padding(
+                              padding: const EdgeInsets.only(
+                                left: 0,
+                                right: 30,
+                              ),
+                              child: SvgPicture.asset(
+                                'assets/icons/expand.svg',
+                                height: 10,
+                                width: 10,
+                              ),
+                            ),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            labelText: 'Age',
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 24,
+                        ),
+                        TextFormField(
+                          decoration: InputDecoration(
+                            contentPadding: const EdgeInsets.all(24),
+                            prefixIconConstraints:
+                                const BoxConstraints(minWidth: 0, minHeight: 0),
+                            prefixIcon: Padding(
+                              padding: const EdgeInsets.only(
+                                left: 24,
+                                right: 16,
+                              ),
+                              child: SvgPicture.asset(
+                                'assets/icons/email.svg',
+                                height: 20,
+                                width: 20,
                               ),
                             ),
                             border: OutlineInputBorder(
@@ -142,7 +214,7 @@ class SignUpPage extends StatelessWidget {
                                 right: 16,
                               ),
                               child: SvgPicture.asset(
-                                'assets/icons/email.svg',
+                                'assets/icons/phone.svg',
                                 height: 24,
                                 width: 24,
                               ),
@@ -150,57 +222,7 @@ class SignUpPage extends StatelessWidget {
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(15),
                             ),
-                            labelText: 'Email',
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 24,
-                        ),
-                        TextFormField(
-                          decoration: InputDecoration(
-                            contentPadding: const EdgeInsets.all(24),
-                            prefixIconConstraints:
-                                const BoxConstraints(minWidth: 0, minHeight: 0),
-                            prefixIcon: Padding(
-                              padding: const EdgeInsets.only(
-                                left: 24,
-                                right: 16,
-                              ),
-                              child: SvgPicture.asset(
-                                'assets/icons/email.svg',
-                                height: 24,
-                                width: 24,
-                              ),
-                            ),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(15),
-                            ),
-                            labelText: 'Email',
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 24,
-                        ),
-                        TextFormField(
-                          decoration: InputDecoration(
-                            contentPadding: const EdgeInsets.all(24),
-                            prefixIconConstraints:
-                                const BoxConstraints(minWidth: 0, minHeight: 0),
-                            prefixIcon: Padding(
-                              padding: const EdgeInsets.only(
-                                left: 24,
-                                right: 16,
-                              ),
-                              child: SvgPicture.asset(
-                                'assets/icons/email.svg',
-                                height: 24,
-                                width: 24,
-                              ),
-                            ),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(15),
-                            ),
-                            labelText: 'Email',
+                            labelText: 'Phone number',
                           ),
                         ),
                         const SizedBox(
@@ -245,128 +267,7 @@ class SignUpPage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    height: 24,
-                  ),
-                  Container(
-                    width: double.infinity,
-                    alignment: Alignment.centerRight,
-                    child: const Text(
-                      Strings.forgotPassword,
-                      style: TextStyle(
-                        color: kDarkGrayColor,
-                        fontSize: 13,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 40,
-                  ),
-                  CustomElevatedButton(
-                    text: Strings.logIn,
-                    onPressed: () {},
-                  ),
-                  const SizedBox(
                     height: 48,
-                  ),
-                  const Row(
-                    children: [
-                      Flexible(
-                        flex: 2,
-                        child: Divider(
-                          thickness: 1,
-                          color: kSystem60Color,
-                        ),
-                      ),
-                      Expanded(
-                        flex: 3,
-                        child: Text(
-                          Strings.or,
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 16,
-                            color: kSystem60Color,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
-                      Flexible(
-                        flex: 2,
-                        child: Divider(
-                          thickness: 1,
-                          color: kSystem60Color,
-                        ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(
-                    height: 24,
-                  ),
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 20,
-                    ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      border: Border.all(
-                        color: kSystem30Color,
-                        width: 1,
-                      ),
-                    ),
-                    width: double.infinity,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Text(
-                          Strings.signInWith,
-                          style: TextStyle(
-                            fontSize: 16,
-                            color: kTextColor2,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                        const SizedBox(
-                          width: 16,
-                        ),
-                        SvgPicture.asset('assets/icons/facebook.svg'),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 24,
-                  ),
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 20,
-                    ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      border: Border.all(
-                        color: kSystem30Color,
-                        width: 1,
-                      ),
-                    ),
-                    width: double.infinity,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Text(
-                          Strings.signInWith,
-                          style: TextStyle(
-                            fontSize: 16,
-                            color: kTextColor2,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                        const SizedBox(
-                          width: 16,
-                        ),
-                        SvgPicture.asset('assets/icons/google.svg'),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 41,
                   ),
                   const Text.rich(
                     TextSpan(
@@ -410,7 +311,14 @@ class SignUpPage extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(
-                    height: 24,
+                    height: 56,
+                  ),
+                  CustomElevatedButton(
+                    text: Strings.createAccount,
+                    onPressed: () {},
+                  ),
+                  const SizedBox(
+                    height: 32,
                   ),
                 ],
               ),
